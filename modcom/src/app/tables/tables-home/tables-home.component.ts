@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tables-home',
@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   templateUrl: './tables-home.component.html',
   styleUrl: './tables-home.component.css'
 })
-export class TablesHomeComponent {
+export class TablesHomeComponent implements OnInit {
+  
+  
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }

@@ -10,7 +10,12 @@ const routes: Routes = [
   {path:'', loadChildren:()=>
     import('./tables/tables.module').then(m=>m.TablesModule)
   },
-  
+  {path:'lists', loadChildren:()=>
+    import('./lists/lists.module').then(m=>m.ListsModule)
+  },
+  {path:'popups', loadChildren:()=>
+    import('./popups/popups.module').then(m=>m.PopupsModule)
+  },
   {path: '', component: HomeComponent},
   {path: '**', component: NotFoundComponent},
 ];
